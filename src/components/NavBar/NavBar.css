@@ -29,3 +29,7 @@ nav{
     justify-content: space-around;
 
 }
+
+.nav_link:hover{
+    border-bottom: 2px solid #008080;
+}
