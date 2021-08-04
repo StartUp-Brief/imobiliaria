@@ -1,0 +1,10 @@
+.img{
+    width: 200px;
+    height: 250px;
+    margin-bottom: 50px;
+    border: 1px solid #000000;
+    box-shadow: 0px 1px 1px 0px #00000040;
+    border-radius: 0px;
+
+    
+}
