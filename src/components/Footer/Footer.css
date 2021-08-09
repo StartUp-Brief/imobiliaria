@@ -1,0 +1,15 @@
+.footer{
+	height: 30vh;
+	width: 80vw;
+	background-color: #008080;
+
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: row;	
+}
+
+.link__footer{
+	color: #fff;
+	text-decoration: unset;
+}

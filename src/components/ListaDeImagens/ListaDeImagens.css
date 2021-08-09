@@ -1,21 +1,23 @@
-.titulo__listaDeImagens{
-	font-family: Sansation;
-	font-style: normal;
-	font-weight: bold;
-	font-size: 30px;
-
-	display: flex;
-    flex-direction: column;
-    align-items: baseline;
-	margin-left: 10%;
+.container__listaDeImagens{
+	max-width: 80vw;
 
 }
-
 .lista{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	flex-direction: row;
-	margin-right: 10%;
-	margin-left: 10%;
+}
+
+.titulo__listaDeImagens{
+	font-family: Sansation;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+
+	display: flex;
+    flex-direction: column;
+    align-items: baseline;
+	justify-content: baseline;
+
 }

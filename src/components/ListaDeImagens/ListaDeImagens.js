@@ -4,14 +4,14 @@ import ImageDisplay from '../ImageDisplay/ImageDisplay';
 import "./ListaDeImagens.css"
 const ListaDeImagens = ({ listaDeImagens, titulo }) => {
 	return (
-		<Fragment>
+		<div className="container__listaDeImagens">
 			<h1 className="titulo__listaDeImagens">{titulo}</h1>
 			<div className="lista">
 				{listaDeImagens.map((obj, key) => {
 					return (<ImageDisplay key={key} imagem={obj.imagem} alt="..." />)
 				})}
 			</div>
-		</Fragment>
+		</div>
 
 	)
 }

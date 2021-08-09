@@ -1,0 +1,25 @@
+.img__Banner{
+	min-width: 80vw;
+	min-height: 70vh;
+	margin: 2px;
+
+	display: flex;
+	justify-content: initial;
+	flex-direction: column;
+
+	color: #FFFFFF;
+
+	border: 2px solid rgba(0, 0, 0, 0.4);
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+
+.h1__Banner{
+	font-family: Sansation;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 28px;
+
+	margin: 20px 20px 20px 20px;
+}
