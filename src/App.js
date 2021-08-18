@@ -65,11 +65,11 @@ function App() {
 			imagem: 'img/Banners/Banner1.png'
 		},
 		{
-			id: 1,
+			id: 2,
 			imagem: 'img/Banners/Banner2.png'
 		},
 		{
-			id: 1,
+			id: 3,
 			imagem: 'img/Banners/Banner3.png'
 		},
 	]
@@ -81,7 +81,7 @@ function App() {
 			<ListaDeImagens listaDeImagens={listaDeImagensUrbano} titulo={"Urbano"} />
 			<ListaDeImagens listaDeImagens={listaDeImagensChacaras} titulo={"Chácaras"} />
 			<ListaDeImagens listaDeImagens={listaDeImagensComercial} titulo={"Comercial"} />
-			<Banner imagem={banners[2]["imagem"]} title="Escolha a cidade dos seus sonhos"/>
+			<Banner imagem={banners[2]["imagem"]} title="Escolha a cidade dos seus sonhos" />
 			<Footer />
 		</div>
 	);
