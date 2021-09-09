@@ -7,7 +7,6 @@ const Footer = ()=>{
 			<a className="link__footer" href="#">Atendimento</a>
 			<a className="link__footer" href="#">Empresa</a>
 			<a className="link__footer" href="#">Imóveis</a>
-			<a className="link__footer" href="#">Agências</a>
 		</footer>
 	)
 }
