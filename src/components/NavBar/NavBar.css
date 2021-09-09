@@ -14,7 +14,7 @@ nav{
 }
 .logo_img{
     height: 70px;
-    width: 70px;
+    width: 60px;
 }
 .titulo{
     display: flex;
@@ -31,7 +31,17 @@ nav{
     justify-content: space-around;
 
 }
+.nav_link{
+    padding: 2px;
+    color:#008080;
+    text-decoration: none;
+    margin-right: 10px;
+}
 
 .nav_link:hover{
     border-bottom: 2px solid #008080;
+}
+
+.login-btn{
+    background: #008080;
 }
