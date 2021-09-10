@@ -6,16 +6,20 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Container from 'react-bootstrap/Container'
 import Button from 'react-bootstrap/Button'
+import FormCadastro from '../../components/formCadastro/formCadastro'
+import './admin.css'
 
 const Admin = () =>{
 
 
     return(
 
-        <div>
+        <div >
             <NavBarSite/>
-            <h1>ADMIN</h1>
+            <div className='admin'>
+            <FormCadastro></FormCadastro>
 
+            </div>
         </div>
     );
 };
