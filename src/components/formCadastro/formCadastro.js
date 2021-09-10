@@ -1,12 +1,20 @@
 import React from "react";
-import { useForm } from 'react-hook-form';
-import NavBarSite from '../../components/NavBar/NavBar';
-import { Form, Col, Row, Select } from "react-bootstrap";
-import Container from 'react-bootstrap/Container';
+import { useState } from "react";
+import { Form, Col, Row } from "react-bootstrap";
 import Button from 'react-bootstrap/Button';
 import './formCadastro.css';
 
 const FormCadastro = () => {
+
+
+    const [cep, setCep ] = useState("");
+
+    function maskCep(e) {
+       setCep(e.target.value.replace(/\D/g, "").replace(/^(\d{5})(\d{3})+?$/, "$1-$2"));
+        console.log(cep);
+      
+      
+    };
 
 
     return (
@@ -79,10 +87,16 @@ const FormCadastro = () => {
 
                     <Form.Group as={Col} >
                         <Form.Label>CEP</Form.Label>
-                        <Form.Control required name="cep" placeholder="xxxxx-xxx" />
+                        <Form.Control 
+                            type='text'
+                            value={cep}
+                            onChange={(e)=>maskCep(e)} 
+                            required name="cep" 
+                            placeholder="xxxxx-xxx" />
+                            
                     </Form.Group>
 
-                    
+
 
                 </Row>
 
