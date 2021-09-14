@@ -1,7 +1,5 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import './App.css';
-import NavBarSite from './components/NavBar/NavBar'
-import Footer from './components/Footer/Footer';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home/home.js'
 import Login from "./pages/Login/login.js"

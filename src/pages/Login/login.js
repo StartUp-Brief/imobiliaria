@@ -1,6 +1,6 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
-import { useHistory, Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import './login.css';
 import NavBarSite from '../../components/NavBar/NavBar';
 import Form from 'react-bootstrap/Form';

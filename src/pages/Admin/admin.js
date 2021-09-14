@@ -1,11 +1,6 @@
 import React from "react";
-import {useForm} from 'react-hook-form';
+import {withRouter} from 'react-router-dom';
 import NavBarSite from '../../components/NavBar/NavBar';
-import Form from 'react-bootstrap/Form';
-import Col from 'react-bootstrap/Col';
-import Row from 'react-bootstrap/Row';
-import Container from 'react-bootstrap/Container'
-import Button from 'react-bootstrap/Button'
 import FormCadastro from '../../components/formCadastro/formCadastro'
 import './admin.css'
 
@@ -24,4 +19,4 @@ const Admin = () =>{
     );
 };
 
-export default Admin;
+export default withRouter(Admin);
