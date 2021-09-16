@@ -9,7 +9,11 @@ const Home = () => {
     const listaDeImagensUrbano = [
         {
             id: 1,
-            imagem: 'img/urbano/urbano1.png'
+            imagem: 'img/Imoveis/apt_sp_zonaNorte_1/1.jpeg',
+            complemento: 'Apartamento',
+            desc: 'Lorem Ipsum Sit Dolor amet',
+            cidade: 'São Paulo',
+            bairro: 'Zona Norte'
         },
         {
             id: 2,

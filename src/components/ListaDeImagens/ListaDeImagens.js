@@ -8,7 +8,14 @@ const ListaDeImagens = ({ listaDeImagens, titulo }) => {
 			<h1 className="titulo__listaDeImagens">{titulo}</h1>
 			<div className="lista">
 				{listaDeImagens.map((obj, key) => {
-					return (<ImageDisplay key={key} imagem={obj.imagem} alt="..." />)
+					return (<ImageDisplay 
+								key={key}
+								imagem={obj.imagem} 
+								complemento={obj.complemento} 
+								desc={obj.desc} 
+								cidade={obj.cidade}
+								bairro={obj.bairro}
+								alt="..." />)
 				})}
 			</div>
 		</div>

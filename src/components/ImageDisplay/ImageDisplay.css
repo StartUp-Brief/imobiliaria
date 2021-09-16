@@ -1,8 +1,10 @@
-.img{
+.imovel_img{
     min-width: 16vw;
-    border: 1px solid #000000;
-    box-shadow: 0px 1px 1px 0px #00000040;
-    border-radius: 0px;
+    height: 48vh;
+  
+}
+.imovel{
+    margin-right: 10px;
+    text-align: center;
 
-    
 }

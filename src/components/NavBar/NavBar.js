@@ -24,9 +24,9 @@ const NavBarSite = () => {
                         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
                             <Nav className="justify-content-end">
                                 <Link to='/Home' className="nav_link">Início</Link>
-                                <Link to='/Home' className="nav_link">Comprar</Link>
-                                <Link to='/Home' className="nav_link">Alugar</Link>
-                                <Link to='/Home' className="nav_link">Vender</Link>
+                                <Link to='/Imoveis' className="nav_link">Comprar</Link>
+                                <Link to='/Imoveis' className="nav_link">Alugar</Link>
+                                <Link to='/Imoveis' className="nav_link">Vender</Link>
                                 <Link to='/Login'><Button className="login-btn">Login</Button></Link>
                             </Nav>
                         </Navbar.Collapse>
