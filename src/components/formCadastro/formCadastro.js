@@ -7,13 +7,13 @@ import './formCadastro.css';
 const FormCadastro = () => {
 
 
-    const [cep, setCep ] = useState("");
+    const [cep, setCep] = useState("");
 
     function maskCep(e) {
-       setCep(e.target.value.replace(/\D/g, "").replace(/^(\d{5})(\d{3})+?$/, "$1-$2"));
+        setCep(e.target.value.replace(/\D/g, "").replace(/^(\d{5})(\d{3})+?$/, "$1-$2"));
         console.log(cep);
-      
-      
+
+
     };
 
 
@@ -87,13 +87,14 @@ const FormCadastro = () => {
 
                     <Form.Group as={Col} >
                         <Form.Label>CEP</Form.Label>
-                        <Form.Control 
+                        <Form.Control
                             type='text'
                             value={cep}
-                            onChange={(e)=>maskCep(e)} 
-                            required name="cep" 
+                            onChange={(e) => maskCep(e)}
+                            required
+                            name="cep"
                             placeholder="xxxxx-xxx" />
-                            
+
                     </Form.Group>
 
 
