@@ -1,7 +1,5 @@
 .imovel_img{
-    min-width: 16vw;
-    height: 48vh;
-  
+    max-width: fit-content;  
 }
 .imovel{
     margin-right: 10px;
