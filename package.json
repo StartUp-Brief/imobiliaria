@@ -1,6 +1,9 @@
 {
   "name": "imobiliaria",
   "version": "0.1.0",
+  "engines": {
+    "node": "14.x"
+  },
   "private": true,
   "dependencies": {
     "@hookform/resolvers": "^2.8.0",
