@@ -1,7 +1,6 @@
 .img__Banner{
 	min-width: 80vw;
 	min-height: 70vh;
-	margin: 2px;
 
 	display: flex;
 	justify-content: initial;
@@ -19,5 +18,5 @@
 	font-weight: bold;
 	font-size: 28px;
 
-	margin: 20px 20px 20px 20px;
+	margin: 20px;
 }

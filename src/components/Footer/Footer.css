@@ -1,7 +1,8 @@
 .footer{
-	height: 30vh;
-	width: 80vw;
+	height: 15vh;
 	background-color: #008080;
+	margin-top: 15px;
+	border-top: solid 5px #008000;
 
 	display: flex;
 	justify-content: space-evenly;
