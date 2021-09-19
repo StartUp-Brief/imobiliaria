@@ -1,6 +1,4 @@
 import React from 'react';
-import { useForm } from 'react-hook-form';
-import { useHistory } from 'react-router-dom';
 import './login.css';
 import NavBarSite from '../../components/NavBar/NavBar';
 import Form from 'react-bootstrap/Form';
@@ -11,32 +9,18 @@ import Button from 'react-bootstrap/Button'
 
 const Login = () => {
 
-    const { register, handleSubmit } = useForm();
-    let history = useHistory();
-
-    function handleLogin(data) {
-        if (data.email === "admin@gmail.com" && data.senha === "12345") {
-            history.replace("/admin")
-        } else {
-            console.log(data.email, data.senha, "ERRO")
-
-        }
-
-
-    }
-
     return (
         <div>
             <NavBarSite />
 
             <Container>
-                <Form className="FormLogin" onSubmit={handleSubmit(handleLogin)}>
+                <Form className="FormLogin">
                     <Form.Group as={Row} className="mb-3" controlId="Email" >
                         <Form.Label column sm="2">
                             Email
                         </Form.Label>
                         <Col sm="10">
-                            <Form.Control type="email" name='email' placeholder="email@exemplo.com.br" {...register('email')} />
+                            <Form.Control type="email" name='email' placeholder="email@exemplo.com.br" />
                         </Col>
                     </Form.Group>
 
@@ -45,7 +29,7 @@ const Login = () => {
                             Senha
                         </Form.Label>
                         <Col sm="10">
-                            <Form.Control type="password" name='senha' placeholder="Senha" {...register('senha')} />
+                            <Form.Control type="password" name='senha' placeholder="Senha" />
                         </Col>
                     </Form.Group>
                     <div className="d-grid">
