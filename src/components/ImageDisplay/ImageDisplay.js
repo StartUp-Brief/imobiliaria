@@ -23,15 +23,15 @@ const ImageDisplay = ({ imagem, complemento, desc, cidade, bairro }) => {
             <Card.Img className="imovel_img" variant="top" src={url} />
             <Card.Body>
                 <Card.Title>{complemento}</Card.Title>
-                <Card.Text>
+                <Card.Text style={{ textAlign: 'left' }}>
                     {desc}
                 </Card.Text>
-                <Button className="Btn">Go somewhere</Button>
+                <Button className="Btn">Conhecer</Button>
             </Card.Body>
             <Card.Footer>
                 <small className="text-muted">{cidade} / {bairro}</small>
             </Card.Footer>
-        </Card>
+        </Card >
     )
 }
 

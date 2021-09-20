@@ -11,7 +11,7 @@ const Home = () => {
             id: 1,
             imagem: 'img/Imoveis/apt_sp_zonaNorte_1/1.jpeg',
             complemento: 'Apartamento',
-            desc: 'Lorem Ipsum Sit Dolor amet',
+            desc: 'Excelente apto 3 dormitórios, sala 2 ambientes, cozinha e área de serviço Preço R$350 mil com lazer completo.',
             cidade: 'São Paulo',
             bairro: 'Zona Norte'
         },
@@ -81,14 +81,14 @@ const Home = () => {
     return (
         <div className="Home">
 
-            <NavBarSite/>
+            <NavBarSite />
             <Banner imagem={banners[0]["imagem"]} title="Encontre o imóvel ideal conosco" align="flex-end" />
             <Banner imagem={banners[1]["imagem"]} title="Melhores  Financiamentos" />
             <ListaDeImagens listaDeImagens={listaDeImagensUrbano} titulo={"Urbano"} />
             <ListaDeImagens listaDeImagens={listaDeImagensChacaras} titulo={"Chácaras"} />
             <ListaDeImagens listaDeImagens={listaDeImagensComercial} titulo={"Comercial"} />
             <Banner imagem={banners[2]["imagem"]} title="Escolha a cidade dos seus sonhos" />
-            <Footer/>
+            <Footer />
 
         </div>
 
