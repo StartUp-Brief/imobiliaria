@@ -22,11 +22,11 @@ const FormCadastro = () => {
         <div className="formCadastro">
             <h1> Cadastro de imóvel</h1>
 
-            <Form className="Form">
+            <form className="Form" enctype='multipart/form-data' method="post" action="http://localhost:3000/admin">
                 <Row className="mb-3">
                     <Form.Group as={Col}>
                         <Form.Label>Logradouro</Form.Label>
-                        <Form.Control required name="logradouro" type="text" placeholder="Ex: Rua Olinda Das Flores" />
+                        <Form.Control required name="rua" type="text" placeholder="Ex: Rua Olinda Das Flores" />
                     </Form.Group>
                     <Form.Group as={Col}>
                         <Form.Label>Número</Form.Label>
@@ -103,11 +103,20 @@ const FormCadastro = () => {
 
                 <Row className="mb-3">
                     <Form.Group as={Col}>
+                        <Form.Label>Área</Form.Label>
+                        <Form.Control required name="area" as="Select" aria-label="Floating label select example">
+                            <option>Área</option>
+                            <option value="urbano">Urbano</option>
+                            <option value="rural">Rural</option>
+                        </Form.Control>
+                    </Form.Group>
+
+                    <Form.Group as={Col}>
                         <Form.Label>Tipo</Form.Label>
                         <Form.Control required name="tipo" as="Select" aria-label="Floating label select example">
                             <option>Tipo</option>
-                            <option value="Acre">Urbano</option>
-                            <option value="Alagoas">Rural</option>
+                            <option value="residencial">Residencial</option>
+                            <option value="comercial">Comercial</option>
                         </Form.Control>
                     </Form.Group>
 
@@ -130,12 +139,12 @@ const FormCadastro = () => {
 
                     <Form.Group as={Col}>
                         <Form.Label>Descrição</Form.Label>
-                        <Form.Control as="textarea" rows={4} />
+                        <Form.Control name="desc" as="textarea" rows={4} />
                     </Form.Group>
 
                     <Form.Group as={Col} controlId="formFileMultiple" >
                         <Form.Label className="arquivo">Insira alguma imagem do imóvel</Form.Label>
-                        <Form.Control type="file" multiple />
+                        <Form.Control name="img" type="file"  />
                     </Form.Group>
 
                 </Row>
@@ -145,7 +154,7 @@ const FormCadastro = () => {
                     </Button>
                 </div>
 
-            </Form>
+            </form>
 
         </div>
     );
