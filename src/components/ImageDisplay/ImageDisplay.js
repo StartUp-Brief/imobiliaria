@@ -26,7 +26,7 @@ const ImageDisplay = ({ imagem, complemento, desc, cidade, bairro }) => {
                 <Card.Text>
                     {desc}
                 </Card.Text>
-                <Button className="Btn">Go somewhere</Button>
+                <Button className="Btn">Ver mais</Button>
             </Card.Body>
             <Card.Footer>
                 <small className="text-muted">{cidade} / {bairro}</small>
